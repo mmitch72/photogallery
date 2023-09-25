@@ -1,0 +1,282 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/*Start of CSS styling*/
+html {
+    box-sizing: border-box;
+    background-color: black;
+}
+body {
+    width: 480px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-color: white;
+}
+header {
+    margin-top: 0px;
+    background-color: white;
+    color: #007d7b;
+    text-align: center;
+    font-weight: bold;
+    height: 90px;
+}
+
+
+h1 {
+    padding-top: 25px;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+}
+nav {
+    background-color: black;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 20px;
+}
+nav li {
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: 50px;
+}
+nav a {
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+[href="#top"] {
+    position: fixed;
+    bottom: 5px;
+    right: 25px;
+    border-style: solid;
+    border: #ffffff;
+}
+main h2 {
+    font-size: 1.8em;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+
+#contact {
+    background-color: black;
+    color: white;
+}
+#contact h2 {
+    font-size: 1.8em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+p {
+    margin: 10px;
+}
+.photos {
+    padding-bottom: 2px;
+}
+.photos img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+.photo {
+    position: relative;
+}
+.bottomwhite {
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+.topwhite {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+.bottomblack {
+    text-align: center;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+.topblack {
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+#contact p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input[type=text] {
+    display: flex;
+    width: 80%;
+    height: 40px;
+    margin-left:50%;
+    margin-top: 25px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+input::placeholder {
+    color: #007d7b;
+    font-weight: bold;
+    padding-left: 5px;
+}
+label {
+    margin-left: 55px;
+    font-size: smaller;
+}
+input[type=submit] {
+    background-color:#007d7b;
+    color: white;
+    padding: 12px 75px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: black;
+}
+footer p {
+    font-size: .75em;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+
+@media screen and (min-width:880px) {
+    body {
+        width: 880px;
+        margin: 0 auto;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    header {
+        text-align: left;
+        padding: 10px;
+    }
+    nav li {
+        padding-left: 160px;
+    }
+    .photos {
+        
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+    .photo img{
+        width:fit-content;
+    }
+    label {
+        margin-left: 95px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    body {
+        width: 1325px;
+        margin: 0 auto;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    ul {
+        display: flex;
+        justify-content: end;
+    }
+    nav li {
+        padding-left: 20px;
+    }
+    .photos {   
+        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+    }
+    .photo img{
+        width:fit-content;
+    }
+    label {
+        margin-left: 143px;
+    }
+}
+
+
